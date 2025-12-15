@@ -101,7 +101,7 @@ def get_ai_response(user_message):
     language_name = st.session_state.selected_language
 
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-4.5",
         messages=[
             {"role": "system", "content": f"You are a helpful assistant. Always respond in {language_name}."},
             {"role": "user", "content": user_message}
